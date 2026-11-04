@@ -248,7 +248,7 @@ st.divider()
 # -----------------------------
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "🔎 Prediksi Individu",
-    "📊 Distribusi 150 Responden",
+    "📊 Distribusi 222 Responden",
     "🏫 Analisis Fakultas",
     "💡 _Explainable AI_ (SHAP)",
     "📈 Performa Model",
@@ -542,8 +542,8 @@ with tab2:
         st.error("Terjadi ketidaksesuaian perhitungan jumlah responden.")
         st.stop()
 
-    if actual_total == 150:
-        expected = {"Rendah": 7, "Sedang": 104, "Tinggi": 39}
+    if actual_total == 222:
+        expected = {"Rendah": 58, "Sedang": 111, "Tinggi": 53}
         if actual_counts.to_dict() != expected:
             st.warning(
                 "Distribusi pada file CSV saat ini berbeda dari distribusi penelitian "
@@ -638,16 +638,16 @@ with tab2:
     st.dataframe(df[display_columns], use_container_width=True, hide_index=True, height=420)
 
     st.download_button(
-        "⬇️ Unduh hasil prediksi 150 responden (CSV)",
+        "⬇️ Unduh hasil prediksi 222 responden (CSV)",
         data=df.to_csv(index=False).encode("utf-8"),
         file_name="dataset_responden_app.csv",
         mime="text/csv",
         use_container_width=True,
     )
 
-    if actual_total != 150:
+    if actual_total != 222:
         st.warning(
-            f"File saat ini berisi {actual_total} responden, bukan 150. "
+            f"File saat ini berisi {actual_total} responden, bukan 222. "
             "Periksa kembali dataset_responden_app.csv dan data penelitian."
         )
 
