@@ -996,11 +996,6 @@ with tab5:
             "mengukur proporsi seluruh prediksi yang benar. Keduanya dapat berbeda "
             "ketika distribusi kelas tidak seimbang."
         )
-        st.warning(
-            "Data uji hanya berisi 45 responden dan kelas Rendah memiliki jumlah sampel "
-            "yang sangat kecil. Karena itu, interpretasikan metrik per kelas secara hati-hati; "
-            "hasil ini belum menjamin performa yang sama pada populasi mahasiswa secara umum."
-        )
 
     except FileNotFoundError:
         st.error(
