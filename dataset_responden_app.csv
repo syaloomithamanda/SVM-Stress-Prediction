@@ -1,0 +1,223 @@
+ID,Jenis_Kelamin,Usia,Fakultas,Angkatan,PASS,PSQI,PSS-10_Score,Tingkat_Stres,Prediksi_Batch
+R001,Perempuan,20,Kedokteran,2023,60,5,12,Rendah,Rendah
+R002,Perempuan,20,Kedokteran,2023,63,5,20,Sedang,Rendah
+R003,Perempuan,21 tahun,Kedokteran,2023,67,5,12,Rendah,Rendah
+R004,Perempuan,22,Kedokteran,2023,49,10,29,Tinggi,Tinggi
+R005,Perempuan,21 tahun,Kedokteran,2023,59,9,17,Sedang,Sedang
+R006,Perempuan,19 tahun,Kedokteran,2023,40,8,29,Tinggi,Tinggi
+R007,Perempuan,22 tahun,Kedokteran,2023,52,10,23,Sedang,Sedang
+R008,Perempuan,21 tahun,Kedokteran,2023,49,6,21,Sedang,Sedang
+R009,Perempuan,20 tahun,Kedokteran,2023,54,10,18,Sedang,Sedang
+R010,Perempuan,20 tahun,Kedokteran,2023,49,10,28,Tinggi,Tinggi
+R011,Perempuan,21 tahun,Kedokteran,2023,62,7,14,Sedang,Sedang
+R012,Perempuan,21,Kedokteran,2023,52,13,24,Sedang,Sedang
+R013,Perempuan,20 tahun,Kedokteran,2023,57,5,20,Sedang,Sedang
+R014,Perempuan,20 tahun,Kedokteran,2023,47,6,28,Tinggi,Sedang
+R015,Perempuan,20 tahun,Kedokteran,2023,49,14,29,Tinggi,Sedang
+R016,Perempuan,21 tahun ,Kedokteran,2023,52,12,24,Sedang,Sedang
+R017,Perempuan,20 tahun,Kedokteran,2023,55,6,22,Sedang,Sedang
+R018,Laki-laki,20,Kedokteran,2023,53,6,17,Sedang,Sedang
+R019,Perempuan,20 tahun,Kedokteran,2023,52,8,31,Tinggi,Sedang
+R020,Perempuan,20 tahun,Kedokteran,2023,55,9,19,Sedang,Sedang
+R021,Perempuan,21 tahun,Kedokteran,2023,52,11,23,Sedang,Sedang
+R022,Laki-laki,20 tahun,Kedokteran,2023,62,3,13,Rendah,Rendah
+R023,Laki-laki,20 tahun,Kedokteran,2023,55,8,24,Sedang,Sedang
+R024,Perempuan,20,Kedokteran,2023,55,11,32,Tinggi,Sedang
+R025,Laki-laki,20,Kedokteran,2023,54,9,18,Sedang,Sedang
+R026,Perempuan,20 tahun,Kedokteran,2023,51,9,23,Sedang,Sedang
+R027,Laki-laki,20 tahun ,Kedokteran,2023,55,3,34,Tinggi,Sedang
+R028,Perempuan,21 tahun,Kedokteran,2022,45,2,6,Rendah,Rendah
+R029,Laki-laki,23 tahun,Kedokteran,2023,43,2,6,Rendah,Rendah
+R030,Perempuan,22 tahun,Kedokteran,2022,66,16,36,Tinggi,Tinggi
+R031,Perempuan,22 tahun,Kedokteran,2022,65,14,37,Tinggi,Tinggi
+R032,Laki-laki,22 tahun,Kedokteran,2022,41,3,7,Rendah,Rendah
+R033,Laki-laki,21,Teknik,2021,55,11,21,Sedang,Sedang
+R034,Laki-laki,22,Teknik,2021,56,13,20,Sedang,Sedang
+R035,Perempuan,21 tahun,Teknik,2022,48,14,27,Tinggi,Tinggi
+R036,Perempuan,22 tahun,Teknik,2022,64,12,22,Sedang,Tinggi
+R037,Laki-laki,21,Teknik,2022,64,9,17,Sedang,Sedang
+R038,Perempuan,21 tahun,Teknik,2022,54,10,27,Tinggi,Sedang
+R039,Perempuan,21 tahun,Teknik,2022,50,9,20,Sedang,Sedang
+R040,Perempuan,21 tahun,Teknik,2022,68,8,23,Sedang,Sedang
+R041,Perempuan,21 tahun,Teknik,2022,46,7,27,Tinggi,Tinggi
+R042,Perempuan,21 tahun,Teknik,2022,57,10,27,Tinggi,Sedang
+R043,Perempuan,21 tahun,Teknik,2022,55,12,26,Sedang,Sedang
+R044,Perempuan,21 tahun,Teknik,2022,50,11,29,Tinggi,Sedang
+R045,Laki-laki,22,Teknik,2022,65,6,12,Rendah,Rendah
+R046,Perempuan,22 tahun,Teknik,2022,66,7,23,Sedang,Rendah
+R047,Perempuan,21 tahun,Teknik,2022,46,11,29,Tinggi,Tinggi
+R048,Laki-laki,26,Teknik,2017,55,5,23,Sedang,Sedang
+R049,Perempuan,22,Teknik,2022,51,13,23,Sedang,Sedang
+R050,Laki-laki,22,Teknik,2021,54,13,26,Sedang,Sedang
+R051,Perempuan,23,Teknik,2021,51,14,22,Sedang,Sedang
+R052,Perempuan,22,Teknik,2022,48,18,26,Sedang,Tinggi
+R053,Laki-laki,23,Teknik,2021,50,18,29,Tinggi,Tinggi
+R054,Laki-laki,21 tahun,Teknik,2022,50,13,24,Sedang,Sedang
+R055,Perempuan,22 tahun,Teknik,2023,42,4,11,Rendah,Rendah
+R056,Perempuan,23 tahun,Teknik,2022,46,3,7,Rendah,Rendah
+R057,Perempuan,22 tahun,Teknik,2023,67,15,32,Tinggi,Tinggi
+R058,Laki-laki,22 tahun,Teknik,2023,44,1,8,Rendah,Rendah
+R059,Laki-laki,21 tahun,Teknik,2023,41,4,6,Rendah,Rendah
+R060,Perempuan,21 tahun,Teknik,2022,39,3,8,Rendah,Rendah
+R061,Perempuan,21 tahun,Teknik,2022,40,2,4,Rendah,Rendah
+R062,Perempuan,20 tahun,Pertanian,2022,53,12,20,Sedang,Sedang
+R063,Perempuan,21 tahun,Pertanian,2022,55,14,32,Tinggi,Sedang
+R064,Perempuan,21 tahun,Pertanian,2022,58,10,31,Tinggi,Sedang
+R065,Perempuan,22 tahun,Pertanian,2022,46,10,30,Tinggi,Tinggi
+R066,Laki-laki,22 tahun,Pertanian,2022,49,10,26,Sedang,Tinggi
+R067,Perempuan,22 tahun,Pertanian,2022,47,10,33,Tinggi,Tinggi
+R068,Laki-laki,22 tahun,Pertanian,2022,45,11,26,Sedang,Tinggi
+R069,Perempuan,22 tahun,Pertanian,2022,45,10,31,Tinggi,Tinggi
+R070,Laki-laki,22 tahun,Pertanian,2022,47,9,24,Sedang,Tinggi
+R071,Laki-laki,22 tahun,Pertanian,2022,46,10,23,Sedang,Tinggi
+R072,Perempuan,22 tahun,Pertanian,2022,46,10,30,Tinggi,Tinggi
+R073,Perempuan,22 tahun,Pertanian,2022,45,11,28,Tinggi,Tinggi
+R074,Laki-laki,21 tahun,Pertanian,2023,41,3,7,Rendah,Rendah
+R075,Laki-laki,23 tahun,Pertanian,2022,44,4,5,Rendah,Rendah
+R076,Laki-laki,21 tahun,Pertanian,2022,40,2,5,Rendah,Rendah
+R077,Perempuan,22 tahun,Pertanian,2022,69,14,32,Tinggi,Tinggi
+R078,Laki-laki,23 tahun,Pertanian,2022,41,4,11,Rendah,Rendah
+R079,Perempuan,21 tahun,Pertanian,2023,41,2,7,Rendah,Rendah
+R080,Perempuan,21 tahun,Pertanian,2023,40,1,4,Rendah,Rendah
+R081,Perempuan,22 tahun,Pertanian,2022,41,2,2,Rendah,Rendah
+R082,Laki-laki,21 tahun,Pertanian,2023,39,2,5,Rendah,Rendah
+R083,Laki-laki,23 tahun,Peternakan,2020,67,9,4,Rendah,Sedang
+R084,Laki-laki,22 tahun,Peternakan,2022,48,7,30,Tinggi,Sedang
+R085,Laki-laki,22 tahun,Peternakan,2022,47,8,29,Tinggi,Tinggi
+R086,Perempuan,21 tahun,Peternakan,2023,45,3,6,Rendah,Rendah
+R087,Laki-laki,21 tahun,Peternakan,2022,64,16,33,Tinggi,Tinggi
+R088,Laki-laki,21 tahun,Peternakan,2022,44,3,4,Rendah,Rendah
+R089,Laki-laki,21 tahun,Peternakan,2023,63,15,36,Tinggi,Tinggi
+R090,Perempuan,22 tahun,Peternakan,2023,41,1,2,Rendah,Rendah
+R091,Perempuan,23 tahun,Peternakan,2022,41,4,3,Rendah,Rendah
+R092,Perempuan,21 tahun,Peternakan,2022,43,2,6,Rendah,Rendah
+R093,Laki-laki,23,Perikanan dan Ilmu Kelautan,2021,63,12,24,Sedang,Tinggi
+R094,Perempuan,22 tahun,Perikanan dan Ilmu Kelautan,2022,55,11,23,Sedang,Sedang
+R095,Perempuan,26,Perikanan dan Ilmu Kelautan,2022,48,13,24,Sedang,Tinggi
+R096,Perempuan,23 tahun,Perikanan dan Ilmu Kelautan,2021,54,13,25,Sedang,Sedang
+R097,Perempuan,22 tahun,Perikanan dan Ilmu Kelautan,2022,41,3,5,Rendah,Rendah
+R098,Laki-laki,21 tahun,Perikanan dan Ilmu Kelautan,2023,41,3,8,Rendah,Rendah
+R099,Perempuan,23 tahun,Perikanan dan Ilmu Kelautan,2023,67,13,36,Tinggi,Tinggi
+R100,Perempuan,22 tahun,Perikanan dan Ilmu Kelautan,2022,42,2,7,Rendah,Rendah
+R101,Perempuan,21 tahun,Ekonomi dan Bisnis,2022,63,10,31,Tinggi,Sedang
+R102,Perempuan,22,Ekonomi dan Bisnis,2022,56,8,22,Sedang,Sedang
+R103,Perempuan,22 tahun,Ekonomi dan Bisnis,2021,59,14,27,Tinggi,Tinggi
+R104,Perempuan,21 tahun,Ekonomi dan Bisnis,2022,58,7,15,Sedang,Sedang
+R105,Laki-laki,21 tahun,Ekonomi dan Bisnis,2022,64,14,17,Sedang,Tinggi
+R106,Laki-laki,21 tahun ,Ekonomi dan Bisnis,2022,46,10,19,Sedang,Tinggi
+R107,Laki-laki,22,Ekonomi dan Bisnis,2021,48,11,21,Sedang,Tinggi
+R108,Perempuan,21,Ekonomi dan Bisnis,2021,51,9,19,Sedang,Sedang
+R109,Perempuan,23,Ekonomi dan Bisnis,2021,53,11,25,Sedang,Sedang
+R110,Laki-laki,22,Ekonomi dan Bisnis,2021,57,3,24,Sedang,Sedang
+R111,Laki-laki,22 tahun,Ekonomi dan Bisnis,2022,46,6,25,Sedang,Sedang
+R112,Laki-laki,22 tahun,Ekonomi dan Bisnis,2022,47,8,25,Sedang,Tinggi
+R113,Perempuan,22 tahun,Ekonomi dan Bisnis,2022,46,6,27,Tinggi,Sedang
+R114,Laki-laki,22 tahun,Ekonomi dan Bisnis,2022,46,7,27,Tinggi,Tinggi
+R115,Perempuan,22 tahun,Ekonomi dan Bisnis,2022,45,9,28,Tinggi,Tinggi
+R116,Laki-laki,22,Ekonomi dan Bisnis,2022,56,10,20,Sedang,Sedang
+R117,Laki-laki,21,Ekonomi dan Bisnis,2022,67,13,24,Sedang,Tinggi
+R118,Laki-laki,22,Ekonomi dan Bisnis,2022,59,10,22,Sedang,Sedang
+R119,Laki-laki,21,Ekonomi dan Bisnis,2022,50,6,23,Sedang,Sedang
+R120,Laki-laki,22,Ekonomi dan Bisnis,2022,44,10,19,Sedang,Tinggi
+R121,Laki-laki,21,Ekonomi dan Bisnis,2022,45,11,20,Sedang,Tinggi
+R122,Perempuan,22,Ekonomi dan Bisnis,2022,57,12,22,Sedang,Sedang
+R123,Laki-laki,22 tahun,Ekonomi dan Bisnis,2022,46,6,21,Sedang,Sedang
+R124,Laki-laki,22 tahun,Ekonomi dan Bisnis,2022,46,5,22,Sedang,Sedang
+R125,Laki-laki,22,Ekonomi dan Bisnis,2022,63,13,26,Sedang,Tinggi
+R126,Laki-laki,22 tahun,Ekonomi dan Bisnis,2022,45,5,22,Sedang,Sedang
+R127,Perempuan,22 tahun,Ekonomi dan Bisnis,2023,42,1,7,Rendah,Rendah
+R128,Perempuan,23 tahun,Ekonomi dan Bisnis,2023,42,4,9,Rendah,Rendah
+R129,Laki-laki,23 tahun,Ekonomi dan Bisnis,2022,40,4,5,Rendah,Rendah
+R130,Laki-laki,22 tahun,Ekonomi dan Bisnis,2022,40,2,5,Rendah,Rendah
+R131,Perempuan,22 tahun,Ekonomi dan Bisnis,2022,42,4,6,Rendah,Rendah
+R132,Laki-laki,23 tahun,Ekonomi dan Bisnis,2023,40,3,7,Rendah,Rendah
+R133,Perempuan,21 tahun,Hukum,2022,50,6,16,Sedang,Sedang
+R134,Perempuan,22 tahun,Hukum,2022,44,13,26,Sedang,Tinggi
+R135,Laki-laki,22 tahun,Hukum,2022,46,9,29,Tinggi,Tinggi
+R136,Laki-laki,22 tahun,Hukum,2022,46,7,27,Tinggi,Tinggi
+R137,Laki-laki,22 tahun,Hukum,2022,44,11,32,Tinggi,Tinggi
+R138,Laki-laki,22 tahun,Hukum,2022,45,9,30,Tinggi,Tinggi
+R139,Laki-laki,22 tahun,Hukum,2022,46,5,26,Sedang,Sedang
+R140,Laki-laki,22 tahun,Hukum,2022,46,7,26,Sedang,Tinggi
+R141,Laki-laki,22 tahun,Hukum,2022,46,7,26,Sedang,Tinggi
+R142,Laki-laki,22 tahun,Hukum,2022,45,5,26,Sedang,Sedang
+R143,Laki-laki,22 tahun,Hukum,2022,45,5,24,Sedang,Sedang
+R144,Laki-laki,22 tahun,Hukum,2022,47,5,22,Sedang,Sedang
+R145,Laki-laki,22 tahun,Hukum,2022,46,8,23,Sedang,Tinggi
+R146,Laki-laki,21 Tahun,Hukum,2022,55,6,23,Sedang,Sedang
+R147,Perempuan,21 tahun,Hukum,2022,54,10,21,Sedang,Sedang
+R148,Laki-laki,22 tahun,Hukum,2022,45,7,24,Sedang,Tinggi
+R149,Perempuan,21 tahun,Hukum,2022,44,9,24,Sedang,Tinggi
+R150,Laki-laki,21 tahun,Hukum,2022,53,10,22,Sedang,Sedang
+R151,Perempuan,21 tahun,Hukum,2022,45,11,31,Tinggi,Tinggi
+R152,Perempuan,21 tahun,Hukum,2022,54,8,23,Sedang,Sedang
+R153,Perempuan,21 tahun,Hukum,2022,53,6,24,Sedang,Sedang
+R154,Perempuan,21 tahun,Hukum,2022,44,13,25,Sedang,Tinggi
+R155,Perempuan,21 tahun,Hukum,2022,54,6,22,Sedang,Sedang
+R156,Perempuan,22 tahun,Hukum,2022,45,9,26,Sedang,Tinggi
+R157,Laki-laki,21 tahun,Hukum,2023,42,3,5,Rendah,Rendah
+R158,Laki-laki,23 tahun,Hukum,2023,44,3,5,Rendah,Rendah
+R159,Perempuan,23 tahun,Hukum,2023,41,3,8,Rendah,Rendah
+R160,Perempuan,22 tahun,Hukum,2022,45,3,5,Rendah,Rendah
+R161,Perempuan,21 tahun,Hukum,2022,44,1,6,Rendah,Rendah
+R162,Laki-laki,21 tahun,Ilmu Sosial dan Ilmu Politik,2022,55,7,21,Sedang,Sedang
+R163,Perempuan,20 tahun,Ilmu Sosial dan Ilmu Politik,2022,56,14,22,Sedang,Sedang
+R164,Perempuan,21 tahun,Ilmu Sosial dan Ilmu Politik,2022,52,4,26,Sedang,Sedang
+R165,Perempuan,21 tahun,Ilmu Sosial dan Ilmu Politik,2022,54,6,13,Rendah,Sedang
+R166,Perempuan,21 tahun,Ilmu Sosial dan Ilmu Politik,2022,46,9,23,Sedang,Tinggi
+R167,Perempuan,21 tahun,Ilmu Sosial dan Ilmu Politik,2022,58,10,29,Tinggi,Sedang
+R168,Perempuan,22 tahun,Ilmu Sosial dan Ilmu Politik,2022,57,11,24,Sedang,Sedang
+R169,Perempuan,22 tahun ,Ilmu Sosial dan Ilmu Politik,2022,44,11,20,Sedang,Tinggi
+R170,Perempuan,20,Ilmu Sosial dan Ilmu Politik,2022,47,4,18,Sedang,Sedang
+R171,Perempuan,21,Ilmu Sosial dan Ilmu Politik,2022,48,3,23,Sedang,Sedang
+R172,Perempuan,22,Ilmu Sosial dan Ilmu Politik,2022,49,9,23,Sedang,Tinggi
+R173,Laki-laki,22,Ilmu Sosial dan Ilmu Politik,2022,56,11,22,Sedang,Sedang
+R174,Perempuan,22,Ilmu Sosial dan Ilmu Politik,2022,50,2,23,Sedang,Sedang
+R175,Laki-laki,22,Ilmu Sosial dan Ilmu Politik,2022,50,7,18,Sedang,Sedang
+R176,Laki-laki,,Ilmu Sosial dan Ilmu Politik,2022,53,4,23,Sedang,Sedang
+R177,Perempuan,22,Ilmu Sosial dan Ilmu Politik,2022,55,8,23,Sedang,Sedang
+R178,Laki-laki,21,Ilmu Sosial dan Ilmu Politik,2022,55,2,20,Sedang,Sedang
+R179,Perempuan,23 tahun,Ilmu Sosial dan Ilmu Politik,2022,41,2,9,Rendah,Rendah
+R180,Perempuan,21 tahun,Ilmu Sosial dan Ilmu Politik,2022,41,2,3,Rendah,Rendah
+R181,Perempuan,23 tahun,Ilmu Sosial dan Ilmu Politik,2023,41,0,6,Rendah,Rendah
+R182,Laki-laki,21 tahun,Ilmu Sosial dan Ilmu Politik,2023,68,16,34,Tinggi,Tinggi
+R183,Perempuan,23 tahun,Ilmu Sosial dan Ilmu Politik,2023,42,2,8,Rendah,Rendah
+R184,Laki-laki,22 tahun,Ilmu Sosial dan Ilmu Politik,2022,64,17,35,Tinggi,Tinggi
+R185,Laki-laki,22 tahun,Ilmu Sosial dan Ilmu Politik,2022,43,3,3,Rendah,Rendah
+R186,Laki-laki,22 tahun,Ilmu Sosial dan Ilmu Politik,2023,68,15,36,Tinggi,Tinggi
+R187,Perempuan,21 tahun,Ilmu Budaya,2022,52,13,23,Sedang,Sedang
+R188,Perempuan,22,Ilmu Budaya,2022,62,9,18,Sedang,Sedang
+R189,Laki-laki,28,Ilmu Budaya,2016,61,10,18,Sedang,Sedang
+R190,Perempuan,21 tahun,Ilmu Budaya,2022,59,10,26,Sedang,Sedang
+R191,Perempuan,22 tahun,Ilmu Budaya,2022,40,10,29,Tinggi,Tinggi
+R192,Perempuan,22 tahun,Ilmu Budaya,2022,48,13,30,Tinggi,Tinggi
+R193,Perempuan,22 tahun,Ilmu Budaya,2023,44,4,7,Rendah,Rendah
+R194,Laki-laki,21 tahun,Ilmu Budaya,2022,68,13,33,Tinggi,Tinggi
+R195,Perempuan,20 tahun,Matematika dan Ilmu Pengetahuan Alam,2023,52,6,23,Sedang,Sedang
+R196,Perempuan,22,Matematika dan Ilmu Pengetahuan Alam,2021,59,9,15,Sedang,Sedang
+R197,Laki-laki,20,Matematika dan Ilmu Pengetahuan Alam,2023,52,8,12,Rendah,Sedang
+R198,Perempuan,21 tahun,Matematika dan Ilmu Pengetahuan Alam,2022,60,8,7,Rendah,Sedang
+R199,Perempuan,20 tahun,Matematika dan Ilmu Pengetahuan Alam,2023,46,9,23,Sedang,Tinggi
+R200,Perempuan,20,Matematika dan Ilmu Pengetahuan Alam,2022,52,12,22,Sedang,Sedang
+R201,Perempuan,21 tahun,Matematika dan Ilmu Pengetahuan Alam,2022,48,9,23,Sedang,Tinggi
+R202,Laki-laki,22 tahun ,Matematika dan Ilmu Pengetahuan Alam,2022,45,17,36,Tinggi,Tinggi
+R203,Laki-laki,21 tahun,Matematika dan Ilmu Pengetahuan Alam,2022,55,6,16,Sedang,Sedang
+R204,Perempuan,22 tahun,Matematika dan Ilmu Pengetahuan Alam,2022,48,12,29,Tinggi,Tinggi
+R205,Perempuan,22 tahun,Matematika dan Ilmu Pengetahuan Alam,2022,45,12,30,Tinggi,Tinggi
+R206,Laki-laki,22 tahun,Matematika dan Ilmu Pengetahuan Alam,2022,49,12,30,Tinggi,Tinggi
+R207,Laki-laki,22 tahun,Matematika dan Ilmu Pengetahuan Alam,2022,42,2,4,Rendah,Rendah
+R208,Perempuan,22 tahun,Matematika dan Ilmu Pengetahuan Alam,2022,42,1,8,Rendah,Rendah
+R209,Perempuan,23 tahun,Matematika dan Ilmu Pengetahuan Alam,2022,38,3,4,Rendah,Rendah
+R210,Laki-laki,23 tahun,Matematika dan Ilmu Pengetahuan Alam,2022,43,2,5,Rendah,Rendah
+R211,Perempuan,21 tahun,Kesehatan Masyarakat,2022,54,14,23,Sedang,Sedang
+R212,Laki-laki,21,Kesehatan Masyarakat,2022,63,6,15,Sedang,Rendah
+R213,Perempuan,21 tahun,Kesehatan Masyarakat,2022,49,10,33,Tinggi,Tinggi
+R214,Perempuan,20 tahun,Kesehatan Masyarakat,2022,65,6,17,Sedang,Rendah
+R215,Perempuan,22 tahun,Kesehatan Masyarakat,2022,53,7,24,Sedang,Sedang
+R216,Perempuan,22 tahun,Kesehatan Masyarakat,2022,47,8,24,Sedang,Tinggi
+R217,Perempuan,22 tahun,Kesehatan Masyarakat,2022,49,9,26,Sedang,Tinggi
+R218,Perempuan,20 tahun,Kesehatan Masyarakat,2022,62,10,19,Sedang,Sedang
+R219,Laki-laki,23 tahun,Kesehatan Masyarakat,2023,37,3,8,Rendah,Rendah
+R220,Laki-laki,22 tahun,Kesehatan Masyarakat,2022,42,1,8,Rendah,Rendah
+R221,Perempuan,23 tahun,Kesehatan Masyarakat,2022,40,1,6,Rendah,Rendah
+R222,Laki-laki,23 tahun,Kesehatan Masyarakat,2023,47,3,4,Rendah,Rendah
