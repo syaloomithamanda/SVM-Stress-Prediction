@@ -751,7 +751,7 @@ with tab4:
         ])
 
     st.subheader("_Global Feature Importance_")
-    st.caption("Mean absolute SHAP dari 30 data uji penelitian.")
+    st.caption("Mean absolute SHAP dari 45 data uji penelitian.")
 
     if not shap_global.empty:
         # Kartu ringkasan per kelas
@@ -997,7 +997,7 @@ with tab5:
             "ketika distribusi kelas tidak seimbang."
         )
         st.warning(
-            "Data uji hanya berisi 30 responden dan kelas Rendah memiliki jumlah sampel "
+            "Data uji hanya berisi 45 responden dan kelas Rendah memiliki jumlah sampel "
             "yang sangat kecil. Karena itu, interpretasikan metrik per kelas secara hati-hati; "
             "hasil ini belum menjamin performa yang sama pada populasi mahasiswa secara umum."
         )
