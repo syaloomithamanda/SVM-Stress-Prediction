@@ -23,5 +23,7 @@
     "PSQI"
   ],
   "test_size": 45,
-  "random_state": 42
+  "random_state": 42,
+  "decision_function_shape": "ovr",
+  "shap_explains": "SVC decision_function output (not probability)"
 }
