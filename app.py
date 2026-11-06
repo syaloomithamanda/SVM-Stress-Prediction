@@ -31,41 +31,45 @@ st.markdown(
     """
     <style>
     :root {
-        --ink: #14243A;
-        --muted: #617187;
-        --navy: #17365D;
-        --teal: #0F9D9A;
-        --line: #E3EAF2;
-        --surface: #FFFFFF;
-        --soft: #F4F8FB;
+        --ink: #F4F8FB;          /* Warna teks utama (putih cerah kebiruan) */
+        --muted: #94A3B8;        /* Warna teks sekunder (abu-abu terang) */
+        --navy: #38BDF8;         /* Warna aksen biru terang/cyan untuk kontras */
+        --teal: #0EA5E9;         /* Warna aksen garis bawah aktif */
+        --line: #1E293B;         /* Warna border/garis pembatas */
+        --surface: #0F172A;      /* Warna background kartu/metrik (biru dongker sangat gelap) */
+        --soft: #1E293B;         /* Warna komponen hover/sekunder */
     }
 
     .stApp { 
-            background: linear-gradient(180deg, #1E1E1E 0%, #000000 340px); 
-            color: #FFFFFF; 
-        }
+        background: linear-gradient(180deg, #0A192F 0%, #020C1B 340px); /* Kombinasi Biru & Hitam (Dark) */
+        color: var(--ink); 
+    }
         
-    [data-testid="stHeader"] { background: rgba(245,248,252,0.88); }
+    [data-testid="stHeader"] { 
+        background: rgba(2, 12, 27, 0.85); /* Header transparan mengikuti background gelap */
+    }
+    
     .block-container {
         max-width: 1480px;
         padding-top: 1.7rem;
         padding-bottom: 3rem;
     }
+    
     h1, h2, h3, h4 { color: var(--ink); letter-spacing: -0.025em; }
     h1 { font-weight: 800 !important; }
     h2, h3 { font-weight: 730 !important; }
-    p, label, [data-testid="stMarkdownContainer"] { line-height: 1.62; }
+    p, label, [data-testid="stMarkdownContainer"] { color: var(--ink); line-height: 1.62; }
 
     [data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #112944 0%, #173B5C 100%);
-        border-right: 1px solid rgba(255,255,255,0.08);
+        background: linear-gradient(180deg, #020C1B 0%, #0A192F 100%);
+        border-right: 1px solid var(--line);
     }
     [data-testid="stSidebar"] * { color: #F1F6FC; }
     [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p { color: #D6E2F0; }
-    [data-testid="stSidebar"] hr { border-color: rgba(255,255,255,0.18); }
+    [data-testid="stSidebar"] hr { border-color: rgba(255,255,255,0.1); }
     [data-testid="stSidebar"] [data-testid="stAlert"] {
-        background: rgba(255,255,255,0.09);
-        border: 1px solid rgba(255,255,255,0.13);
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(255,255,255,0.1);
         border-radius: 12px;
     }
 
@@ -76,20 +80,21 @@ st.markdown(
         margin: 0.2rem 0 1.35rem 0;
         border-radius: 22px;
         color: #FFFFFF;
-        background: linear-gradient(120deg, #142B49 0%, #1A496B 65%, #0E8588 100%);
-        box-shadow: 0 16px 34px rgba(23,54,93,0.16);
+        background: linear-gradient(120deg, #0F2B48 0%, #0A192F 65%, #0B6B79 100%);
+        box-shadow: 0 16px 34px rgba(0,0,0,0.4);
+        border: 1px solid rgba(255,255,255,0.05);
     }
     .hero-panel:after {
         content: "";
         position: absolute;
         width: 240px; height: 240px;
         right: -65px; top: -115px;
-        border: 1px solid rgba(255,255,255,0.16);
+        border: 1px solid rgba(255,255,255,0.1);
         border-radius: 50%;
-        box-shadow: 0 0 0 28px rgba(255,255,255,0.035), 0 0 0 58px rgba(255,255,255,0.025);
+        box-shadow: 0 0 0 28px rgba(255,255,255,0.02), 0 0 0 58px rgba(255,255,255,0.01);
     }
     .hero-eyebrow {
-        color: #A8F0E8;
+        color: #38BDF8;
         text-transform: uppercase;
         font-size: 0.75rem;
         font-weight: 800;
@@ -109,13 +114,13 @@ st.markdown(
         position: relative; z-index: 1;
         font-size: 1rem;
         max-width: 850px;
-        color: #E0ECF7;
+        color: #E2E8F0;
         margin: 0;
     }
     .hero-tags { display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:1.1rem; position:relative; z-index:1; }
     .hero-tag {
         display:inline-block; padding:0.28rem 0.65rem; border-radius:999px;
-        border:1px solid rgba(255,255,255,0.25); background:rgba(255,255,255,0.09);
+        border:1px solid rgba(255,255,255,0.15); background:rgba(255,255,255,0.05);
         color:#F4FBFF; font-size:0.76rem; font-weight:650;
     }
 
@@ -124,7 +129,7 @@ st.markdown(
         border: 1px solid var(--line);
         border-radius: 16px;
         padding: 1rem 1.05rem;
-        box-shadow: 0 5px 16px rgba(20,36,58,0.045);
+        box-shadow: 0 5px 16px rgba(0,0,0,0.2);
         min-height: 112px;
     }
     [data-testid="stMetricLabel"] { color: var(--muted); font-size: 0.88rem; font-weight: 650; }
@@ -140,11 +145,12 @@ st.markdown(
         border-radius: 11px 11px 0 0;
         padding: 0.75rem 0.95rem;
         font-weight: 680;
-        color: #5A6C82;
+        color: var(--muted);
+        background: transparent;
     }
     [data-testid="stTabs"] button[role="tab"][aria-selected="true"] {
         color: var(--navy);
-        background: #EAF4F7;
+        background: var(--surface);
         border-bottom: 3px solid var(--teal);
     }
     [data-testid="stTabsContent"] { padding-top: 1.25rem; }
@@ -157,31 +163,40 @@ st.markdown(
     }
     .stButton > button[kind="primary"] {
         border: 0;
-        background: linear-gradient(100deg, #17365D 0%, #087F8C 100%);
+        background: linear-gradient(100deg, #0EA5E9 0%, #0369A1 100%);
         color: white;
-        box-shadow: 0 6px 14px rgba(15,92,120,0.16);
+        box-shadow: 0 6px 14px rgba(0,0,0,0.3);
     }
     .stButton > button:hover, .stDownloadButton > button:hover {
         transform: translateY(-1px);
-        box-shadow: 0 7px 17px rgba(20,36,58,0.10);
+        box-shadow: 0 7px 17px rgba(0,0,0,0.4);
+        background: var(--soft);
     }
+    
+    /* Penyesuaian Input Box & Dropdown agar serasi dengan Dark Mode */
     [data-testid="stTextInput"] input, [data-testid="stNumberInput"] input,
     [data-testid="stSelectbox"] div[data-baseweb="select"] {
         border-radius: 10px;
+        background-color: var(--surface) !important;
+        color: var(--ink) !important;
+        border-color: var(--line) !important;
     }
+    
     [data-testid="stDataFrame"], [data-testid="stTable"] {
         border: 1px solid var(--line);
         border-radius: 12px;
         overflow: hidden;
+        background-color: var(--surface);
     }
     [data-testid="stAlert"] { border-radius: 12px; }
     [data-testid="stPlotlyChart"], [data-testid="stImage"] {
         border-radius: 14px;
+        background-color: transparent;
     }
     hr { border-color: var(--line); }
     .app-footer {
         padding: 0.9rem 0 0.2rem;
-        color: #718096;
+        color: var(--muted);
         font-size: 0.8rem;
         text-align: center;
     }
