@@ -325,8 +325,8 @@ except Exception as e:
 # Sidebar
 # -----------------------------
 with st.sidebar:
-    st.title("🧠 SVM Stress App")
-    st.caption("Aplikasi penelitian — UNSRAT")
+    st.title("🧠 Support Vector Machine Stress Prediction")
+    st.caption("Website penelitian - UNSRAT")
     st.divider()
 
     st.subheader("⚙️ Konfigurasi Model")
@@ -352,7 +352,7 @@ with st.sidebar:
     st.error("🔴 **Tinggi** — PSS-10 27–40")
 
     st.divider()
-    st.caption("PSS-10 digunakan untuk membentuk target. PASS dan PSQI digunakan sebagai fitur model. PSS-10_Score tidak digunakan sebagai fitur untuk mencegah target leakage. SHAP menjelaskan keputusan model dan bukan hubungan sebab-akibat.")
+    st.caption("PSS-10 digunakan untuk membentuk target. PASS dan PSQI digunakan sebagai fitur model. PSS-10 tidak digunakan sebagai fitur untuk mencegah target leakage. SHAP menjelaskan keputusan model dan bukan hubungan sebab-akibat.")
 
 # -----------------------------
 # Header — presentation only
@@ -784,7 +784,7 @@ with tab2:
     display_columns = [
         c for c in [
             "ID", "Jenis_Kelamin", "Usia", "Fakultas", "Angkatan",
-            "PASS", "PSQI", "PSS-10_Score", "Tingkat_Stres", "Prediksi_Batch"
+            "PASS", "PSQI", "PSS-10", "Tingkat_Stres", "Prediksi_Batch"
         ] if c in df.columns
     ]
     st.dataframe(df[display_columns], use_container_width=True, hide_index=True, height=420)
