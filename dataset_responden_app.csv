@@ -1,4 +1,4 @@
-ID,Jenis_Kelamin,Usia,Fakultas,Angkatan,PASS,PSQI,PSS-10_Score,Tingkat_Stres,Prediksi_Batch
+ID,Jenis_Kelamin,Usia,Fakultas,Angkatan,PASS,PSQI,PSS-10,Tingkat_Stres,Prediksi_Batch
 R001,Perempuan,20 tahun,Kedokteran,2023,60,5,12,Rendah,Rendah
 R002,Perempuan,20 tahun,Kedokteran,2023,63,5,20,Sedang,Rendah
 R003,Perempuan,21 tahun,Kedokteran,2023,67,5,12,Rendah,Rendah
