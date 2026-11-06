@@ -40,10 +40,11 @@ st.markdown(
         --soft: #F4F8FB;
     }
 
-    .stApp {
-        background: linear-gradient(180deg, #F5F8FC 0%, #FFFFFF 340px);
-        color: var(--ink);
-    }
+    .stApp { 
+            background: linear-gradient(180deg, #1E1E1E 0%, #000000 340px); 
+            color: #FFFFFF; 
+        }
+        
     [data-testid="stHeader"] { background: rgba(245,248,252,0.88); }
     .block-container {
         max-width: 1480px;
