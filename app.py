@@ -198,8 +198,8 @@ with st.sidebar:
     st.subheader("⚙️ Konfigurasi Model")
     st.write("**Algoritma:** SVM")
     st.write("**Kernel:** RBF")
-    st.write("**C:** 1")
-    st.write("**Gamma:** 1")
+    st.write("**C:** 100")
+    st.write("**Gamma:** 0.1")
     st.write("**_Class weight:_** _balanced_")
     st.write("**Fitur:** PASS + PSQI")
 
@@ -544,6 +544,11 @@ with tab2:
 
     if actual_total == 222:
         expected = {"Rendah": 58, "Sedang": 111, "Tinggi": 53}
+        if actual_counts.to_dict() != expected:
+            st.warning(
+                "Distribusi pada file CSV saat ini berbeda dari distribusi penelitian "
+                "yang digunakan pada hasil analisis (7/104/39). Periksa kembali CSV."
+            )
 
     # Kartu ringkasan.
     c1, c2, c3, c4 = st.columns(4)
