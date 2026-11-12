@@ -1,4 +1,4 @@
-ID,Jenis_Kelamin,Usia,Fakultas,Angkatan,PASS,PSQI,PSS-10,Tingkat_Stres,Prediksi_Batch
+﻿ID,Jenis_Kelamin,Usia,Fakultas,Angkatan,PASS,PSQI,PSS-10,Tingkat_Stres,Prediksi_Batch
 R001,Perempuan,20 tahun,Kedokteran,2023,60,5,12,Rendah,Rendah
 R002,Perempuan,20 tahun,Kedokteran,2023,63,5,20,Sedang,Rendah
 R003,Perempuan,21 tahun,Kedokteran,2023,67,5,12,Rendah,Rendah
@@ -14,7 +14,7 @@ R012,Perempuan,21 tahun,Kedokteran,2023,52,13,24,Sedang,Sedang
 R013,Perempuan,20 tahun,Kedokteran,2023,57,5,20,Sedang,Sedang
 R014,Perempuan,20 tahun,Kedokteran,2023,47,6,28,Tinggi,Sedang
 R015,Perempuan,20 tahun,Kedokteran,2023,49,14,29,Tinggi,Sedang
-R016,Perempuan,21 tahun ,Kedokteran,2023,52,12,24,Sedang,Sedang
+R016,Perempuan,21 tahun,Kedokteran,2023,52,12,24,Sedang,Sedang
 R017,Perempuan,20 tahun,Kedokteran,2023,55,6,22,Sedang,Sedang
 R018,Laki-laki,20 tahun,Kedokteran,2023,53,6,17,Sedang,Sedang
 R019,Perempuan,20 tahun,Kedokteran,2023,52,8,31,Tinggi,Sedang
@@ -25,7 +25,7 @@ R023,Laki-laki,20 tahun,Kedokteran,2023,55,8,24,Sedang,Sedang
 R024,Perempuan,20 tahun,Kedokteran,2023,55,11,32,Tinggi,Sedang
 R025,Laki-laki,20 tahun,Kedokteran,2023,54,9,18,Sedang,Sedang
 R026,Perempuan,20 tahun,Kedokteran,2023,51,9,23,Sedang,Sedang
-R027,Laki-laki,20 tahun ,Kedokteran,2023,55,3,34,Tinggi,Sedang
+R027,Laki-laki,20 tahun,Kedokteran,2023,55,3,34,Tinggi,Sedang
 R028,Perempuan,21 tahun,Kedokteran,2022,45,2,6,Rendah,Rendah
 R029,Laki-laki,23 tahun,Kedokteran,2023,43,2,6,Rendah,Rendah
 R030,Perempuan,22 tahun,Kedokteran,2022,66,16,36,Tinggi,Tinggi
@@ -104,7 +104,7 @@ R102,Perempuan,22 tahun,Ekonomi dan Bisnis,2022,56,8,22,Sedang,Sedang
 R103,Perempuan,22 tahun,Ekonomi dan Bisnis,2021,59,14,27,Tinggi,Tinggi
 R104,Perempuan,21 tahun,Ekonomi dan Bisnis,2022,58,7,15,Sedang,Sedang
 R105,Laki-laki,21 tahun,Ekonomi dan Bisnis,2022,64,14,17,Sedang,Tinggi
-R106,Laki-laki,21 tahun ,Ekonomi dan Bisnis,2022,46,10,19,Sedang,Tinggi
+R106,Laki-laki,21 tahun,Ekonomi dan Bisnis,2022,46,10,19,Sedang,Tinggi
 R107,Laki-laki,22 tahun,Ekonomi dan Bisnis,2021,48,11,21,Sedang,Tinggi
 R108,Perempuan,21 tahun,Ekonomi dan Bisnis,2021,51,9,19,Sedang,Sedang
 R109,Perempuan,23 tahun,Ekonomi dan Bisnis,2021,53,11,25,Sedang,Sedang
