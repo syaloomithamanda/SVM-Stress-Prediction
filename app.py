@@ -638,11 +638,24 @@ with tab1:
                     "#EF4444" if value < 0 else "#22C55E"
                     for value in shap_df["Nilai SHAP"]
                 ]
-                ax.barh(
+                bars = ax.barh(
                     shap_df["Fitur"],
                     shap_df["Nilai SHAP"],
                     color=colors
                 )
+                # Tampilkan nilai SHAP tepat pada setiap batang.
+                value_span = float(shap_df["Nilai SHAP"].max() - shap_df["Nilai SHAP"].min())
+                label_offset = max(value_span * 0.025, 0.0005)
+                for bar, value in zip(bars, shap_df["Nilai SHAP"]):
+                    ax.text(
+                        value + (label_offset if value >= 0 else -label_offset),
+                        bar.get_y() + bar.get_height() / 2,
+                        f"{value:+.5f}",
+                        va="center",
+                        ha="left" if value >= 0 else "right",
+                        fontsize=9,
+                        fontweight="bold",
+                    )
                 ax.axvline(0, color="black", linewidth=0.8)
                 ax.set_xlabel("Kontribusi SHAP terhadap output keputusan")
                 ax.set_title(f"Penjelasan untuk kelas {prediction}")
@@ -823,12 +836,35 @@ with tab3:
         st.subheader("Jumlah Responden")
         st.dataframe(faculty, use_container_width=True)
 
-        # Stacked colored chart
-        fig, ax = plt.subplots(figsize=(11, max(4.8, len(faculty) * 0.42)))
-        bottom = np.zeros(len(faculty))
+        # Stacked colored chart dengan label jumlah dan persentase per fakultas.
+        fig, ax = plt.subplots(figsize=(12, max(4.8, len(faculty) * 0.48)))
+        bottom = np.zeros(len(faculty), dtype=float)
+        faculty_totals = faculty.sum(axis=1).to_numpy(dtype=float)
         for cat in STRESS_CLASSES:
-            vals = faculty[cat].values
-            ax.barh(faculty.index.astype(str), vals, left=bottom, label=cat, color=STRESS_COLORS[cat])
+            vals = faculty[cat].to_numpy(dtype=float)
+            bars = ax.barh(
+                faculty.index.astype(str),
+                vals,
+                left=bottom,
+                label=cat,
+                color=STRESS_COLORS[cat],
+            )
+            for i, (bar, value) in enumerate(zip(bars, vals)):
+                total_in_faculty = faculty_totals[i]
+                pct_value = (value / total_in_faculty * 100) if total_in_faculty else 0.0
+                # Label di dalam segmen; segmen sangat kecil tetap tercantum
+                # secara lengkap pada tabel jumlah dan persentase di bawah.
+                if value > 0 and pct_value >= 5:
+                    ax.text(
+                        bottom[i] + value / 2,
+                        bar.get_y() + bar.get_height() / 2,
+                        f"{int(value)} ({pct_value:.1f}%)",
+                        ha="center",
+                        va="center",
+                        fontsize=8,
+                        color="white",
+                        fontweight="bold",
+                    )
             bottom += vals
         ax.set_xlabel("Jumlah responden")
         ax.set_title("Komposisi Kategori Stres per Fakultas", fontweight="bold")
@@ -841,8 +877,18 @@ with tab3:
 
         pct = (faculty.div(faculty.sum(axis=1), axis=0) * 100).round(2)
         st.subheader("Persentase dalam Masing-masing Fakultas")
-        st.dataframe(pct, use_container_width=True)
-        st.caption("Persentase dihitung di dalam masing-masing fakultas.")
+        pct_display = pct.copy()
+        pct_display.columns = [f"{col} (%)" for col in pct_display.columns]
+        st.dataframe(
+            pct_display.style.format("{:.2f}%"),
+            use_container_width=True,
+        )
+        st.caption(
+            "Label pada batang menampilkan jumlah responden dan persentase. "
+            "Persentase dihitung terhadap total responden di fakultas yang sama. "
+            "Segmen di bawah 5% tidak diberi label di dalam batang agar tidak bertumpuk; "
+            "nilai lengkapnya tetap tersedia pada tabel."
+        )
 
 # -----------------------------
 # Tab 4
@@ -935,8 +981,22 @@ with tab4:
         fig, ax = plt.subplots(figsize=(9, 4.8))
         x = np.arange(len(STRESS_CLASSES))
         width = 0.34
-        ax.bar(x - width / 2, pivot["PASS"], width, label="PASS", color="#4F46E5")
-        ax.bar(x + width / 2, pivot["PSQI"], width, label="PSQI", color="#06B6D4")
+        bars_pass = ax.bar(x - width / 2, pivot["PASS"], width, label="PASS", color="#4F46E5")
+        bars_psqi = ax.bar(x + width / 2, pivot["PSQI"], width, label="PSQI", color="#06B6D4")
+        # Nilai Mean |SHAP| ditampilkan di atas masing-masing batang.
+        for bars in (bars_pass, bars_psqi):
+            for bar in bars:
+                value = bar.get_height()
+                ax.annotate(
+                    f"{value:.5f}",
+                    xy=(bar.get_x() + bar.get_width() / 2, value),
+                    xytext=(0, 4),
+                    textcoords="offset points",
+                    ha="center",
+                    va="bottom",
+                    fontsize=8,
+                    fontweight="bold",
+                )
         ax.set_xticks(x)
         ax.set_xticklabels(STRESS_CLASSES)
         ax.set_ylabel("Mean |SHAP|")
@@ -1045,9 +1105,45 @@ with tab5:
             columns=[f"Prediksi {name}" for name in STRESS_CLASSES],
         )
         st.dataframe(cm_df, use_container_width=True)
+
+        # Heatmap menampilkan jumlah kasus dan persentase per baris
+        # (persentase terhadap seluruh data aktual pada kelas tersebut).
+        row_totals = cm.sum(axis=1, keepdims=True)
+        cm_pct = np.divide(
+            cm,
+            row_totals,
+            out=np.zeros_like(cm, dtype=float),
+            where=row_totals != 0,
+        ) * 100
+        fig, ax = plt.subplots(figsize=(8, 5.5))
+        image = ax.imshow(cm, cmap="Blues")
+        ax.set_xticks(np.arange(len(STRESS_CLASSES)))
+        ax.set_yticks(np.arange(len(STRESS_CLASSES)))
+        ax.set_xticklabels(STRESS_CLASSES)
+        ax.set_yticklabels(STRESS_CLASSES)
+        ax.set_xlabel("Kelas Prediksi")
+        ax.set_ylabel("Kelas Aktual")
+        ax.set_title("Confusion Matrix: Jumlah dan Persentase per Kelas Aktual")
+        threshold = (cm.max() / 2) if cm.size and cm.max() > 0 else 0
+        for i in range(cm.shape[0]):
+            for j in range(cm.shape[1]):
+                text_color = "white" if cm[i, j] > threshold else "#172554"
+                ax.text(
+                    j, i,
+                    f"{cm[i, j]}\n({cm_pct[i, j]:.1f}%)",
+                    ha="center",
+                    va="center",
+                    color=text_color,
+                    fontweight="bold",
+                )
+        fig.colorbar(image, ax=ax, label="Jumlah data")
+        fig.tight_layout()
+        st.pyplot(fig, use_container_width=True)
+        plt.close(fig)
         st.caption(
-            "Baris menunjukkan kelas aktual dan kolom menunjukkan kelas prediksi. "
-            "Diagonal menunjukkan jumlah klasifikasi yang benar."
+            "Setiap sel menampilkan jumlah data dan persentase dari baris kelas aktual "
+            "yang sama. Contoh: persentase pada baris Rendah dihitung dari seluruh "
+            "responden yang kelas aktualnya Rendah. Diagonal menunjukkan prediksi benar."
         )
 
         st.subheader("Laporan Klasifikasi per Kelas")
