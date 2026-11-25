@@ -684,6 +684,7 @@ with tab1:
 # -----------------------------
 with tab2:
     st.header("Distribusi Tingkat Stres")
+    st.caption("Prediksi dihitung pada seluruh 222 responden, termasuk data latih. Tampilan ini bukan hasil evaluasi; lihat tab Performa Model untuk evaluasi pada 45 data uji.")
     st.write("Kategori aktual dibentuk dari skor PSS-10 pada responden penelitian.")
 
     # Hitung langsung dari label aktual; tidak memakai hasil prediksi model.
