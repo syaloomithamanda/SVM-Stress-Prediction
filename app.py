@@ -1234,8 +1234,8 @@ with tab5:
                 config_items.append(("Random state", str(experiment["random_state"])))
         except (FileNotFoundError, json.JSONDecodeError, TypeError, ValueError):
             config_items.extend([
-                ("C", "100"),
-                ("Gamma", "0.1"),
+                ("C", "10"),
+                ("Gamma", "scale"),
                 ("Class weight", "balanced"),
             ])
         config_df = pd.DataFrame(config_items, columns=["Komponen", "Nilai"])
@@ -1247,8 +1247,8 @@ with tab5:
             "ketika distribusi kelas tidak seimbang."
         )
         st.warning(
-            "Data uji pada eksperimen final berisi 45 responden. Jumlah sampel per kelas tetap perlu diperhatikan: "
-            "yang sangat kecil. Karena itu, interpretasikan metrik per kelas secara hati-hati; "
+            "Data uji pada eksperimen final berisi 45 responden. Jumlah sampel per kelas tetap perlu diperhatikan "
+            "karena sangat kecil (12, 22, dan 11). Karena itu, interpretasikan metrik per kelas secara hati-hati; "
             "hasil ini belum menjamin performa yang sama pada populasi mahasiswa secara umum."
         )
 
